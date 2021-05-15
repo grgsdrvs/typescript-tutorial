@@ -15,6 +15,12 @@
 * `"exclude": [
     "node_modules",
     "**/*.dev.ts"
-  ]` will exclude all files in all folders with `.dev.ts` included
+  ]` will exclude all files in all folders with `.dev.ts` included and also the node_modules-folder.
 * The asterisk * is the wildcard operator.
-* in both the exclude and include specific files can be listed.
+* In both the exclude-option and include-option specific files can be listed.
+* When compilation is done the files are selected from "include-exclude".
+
+### Other
+
+* Exclamation point `!` is used to declare that a certain expression is not-null. Me as a developer are sure that it's not null and therefore instructs TS to not accept the expression.
+Example: `const button = document.querySelector('button')!;`
